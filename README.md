@@ -45,8 +45,8 @@ To get started with the project, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Daltonic/solana_tokenize_project
-   cd solana_tokenize_project
+   git clone https://github.com/ace-brown/KAD-token
+   cd KAD-token
    ```
 
 2. **Install dependencies:**
@@ -83,15 +83,6 @@ To get started with the project, follow these steps:
 ## Usage
 
 Once the development server is running, you can access the dApp by navigating to `http://localhost:3000` in your web browser. The dashboard will display a list of recently minted tokens, including the receiver's address, the amount of tokens minted, and links to the transaction and address on the Solana explorer.
-
-## Project Structure
-
-- `components/`: Contains React components used in the project
-  - `MintHistory.tsx`: Component to display the mint history
-- `services/`: Contains service functions for interacting with the Solana blockchain
-  - `blockchain.ts`: Functions for fetching mint history, buying tokens, and getting token balance
-- `utils/`: Contains utility types and functions
-  - `types.dt.ts`: Type definitions for the project
 
 ## Contributing
 

@@ -6,6 +6,8 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import data from '@/utils/data.json'
 
+import classes from './index.module.css'
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const [balance, setBalance] = useState(0)
@@ -36,7 +38,7 @@ export default function Home() {
 
         <div className="h-[100px]" />
 
-        <main className="max-w-lg mx-auto p-4 space-y-4">
+        <main className={classes.test}>
           <BuyTokens />
           <Balance balance={balance} />
           <MintHistory mintHistory={mintHistory} />
