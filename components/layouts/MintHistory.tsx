@@ -1,6 +1,8 @@
-import { MintHistoryItem } from '@/utils/types.dt'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+
+import { MintHistoryItem } from '@/utils/types.dt'
+import classes from './MintHistory.module.css'
 
 const formatReceiver = (receiver: string) => {
   return `${receiver.substring(0, 4)}...${receiver.substring(receiver.length - 4)}`
@@ -8,8 +10,8 @@ const formatReceiver = (receiver: string) => {
 
 const MintHistory = ({ mintHistory }: { mintHistory: MintHistoryItem[] }) => {
   return (
-    <div>
-      <h1 className="text-lg font-bold text-gray-700">Recently Purchased</h1>
+    <div className={classes['mint-history']}>
+      <h1>Recently Purchased</h1>
       <ul className="mt-2 text-gray-500">
         {mintHistory.map((minter, i) => (
           <li key={i} className="mb-2 flex justify-between items-center">

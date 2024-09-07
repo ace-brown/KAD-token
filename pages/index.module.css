@@ -5,13 +5,13 @@
 
 .token-area,
 .chart-area {
-  width: 95%;
+  width: var(--page-width-mobile);
   margin: 1rem auto;
 }
 
 @media screen and (min-width: 880px) {
   .main-area {
-    width: 95%;
+    width: var(--page-width-desktop);
     margin: 0 auto;
     display: flex;
     flex-direction: row;

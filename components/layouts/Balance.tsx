@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Identicon from 'react-identicons'
 
-const Balance = ({ balance }: { balance: number }) => {
+import classes from './/Balance.module.css'
 
+const Balance = ({ balance }: { balance: number }) => {
   return (
-    <div className="bg-white shadow-sm rounded-lg p-3 w-full flex items-center justify-start space-x-4">
+    <div className={classes.balance}>
       <div className="rounded-full shadow-sm overflow-hidden inline-block">
         <Identicon string="random-string" size={40} />
       </div>

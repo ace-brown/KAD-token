@@ -1,14 +1,14 @@
-import Balance from '@/components/Balance'
-import BuyTokens from '@/components/BuyTokens'
-import Header from '@/components/layouts/Header'
-import MintHistory from '@/components/MintHistory'
-import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import data from '@/utils/data.json'
+import Head from 'next/head'
 
-import classes from './index.module.css'
+import Balance from '@/components/layouts/Balance'
+import BuyTokens from '@/components/layouts/BuyTokens'
+import MintHistory from '@/components/layouts/MintHistory'
+import Header from '@/components/layouts/Header'
+import data from '@/utils/data.json'
 import Chart from '@/components/Chart/Chart'
 import Card from '@/components/UI/Card'
+import classes from './index.module.css'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)

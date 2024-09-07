@@ -1,5 +1,5 @@
 .container {
-  width: 95%;
+  width: var(--page-width-mobile);
   margin: 0.5rem auto;
 }
 
@@ -46,6 +46,7 @@
 
 @media screen and (min-width: 880px) {
   .container {
+    width: var(--page-width-desktop);
     margin: 2rem auto;
   }
 
