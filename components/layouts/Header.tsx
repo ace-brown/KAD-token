@@ -10,13 +10,13 @@ const Header = () => {
       <Card>
         <nav className={classes.navigation}>
           <div className={classes.logo}>
-            <p>KAD Token</p>
-          </div>
-          <div className={classes.middle}>
-            <Button>EN</Button>
-            <FaSun />
+            <p>
+              KAD <small>Token</small>
+            </p>
           </div>
           <div className={classes['connect-btn']}>
+            <h3>EN</h3>
+            <FaSun />
             <Button>Connect Wallet</Button>
           </div>
         </nav>

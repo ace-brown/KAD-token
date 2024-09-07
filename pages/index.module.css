@@ -1,2 +1,33 @@
+.main-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.token-area,
+.chart-area {
+  width: 95%;
+  margin: 1rem auto;
+}
+
 @media screen and (min-width: 880px) {
+  .main-area {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .token-area {
+    flex: 1;
+    order: 2;
+    width: 100%;
+  }
+
+  .chart-area {
+    flex: 2;
+    order: 1;
+    width: 100%;
+  }
 }

@@ -4,7 +4,7 @@ import classes from './Card.module.css'
 
 type CardProps = {
   children: ReactNode
-  className?: ''
+  className?: string
 }
 
 const Card = ({ children, className }: CardProps) => {

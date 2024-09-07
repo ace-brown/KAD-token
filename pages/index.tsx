@@ -8,6 +8,7 @@ import data from '@/utils/data.json'
 
 import classes from './index.module.css'
 import Chart from '@/components/Chart/Chart'
+import Card from '@/components/UI/Card'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -38,13 +39,13 @@ export default function Home() {
       <div>
         <Header />
 
-        <main className={classes.test}>
-          <div>
+        <main className={classes['main-area']}>
+          <Card className={classes['token-area']}>
             <BuyTokens />
             <Balance balance={balance} />
             <MintHistory mintHistory={mintHistory} />
-          </div>
-          <div>
+          </Card>
+          <div className={classes['chart-area']}>
             <Chart />
           </div>
         </main>
