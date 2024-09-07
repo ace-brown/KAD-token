@@ -1,0 +1,26 @@
+.container {
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.logo > p {
+  width: 2.5rem;
+}
+
+.middle {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 880px) {
+  .container {
+    margin: 2rem auto;
+  }
+}

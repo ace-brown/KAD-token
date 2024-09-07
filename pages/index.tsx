@@ -1,12 +1,13 @@
 import Balance from '@/components/Balance'
 import BuyTokens from '@/components/BuyTokens'
-import Header from '@/components/Header'
+import Header from '@/components/layouts/Header'
 import MintHistory from '@/components/MintHistory'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import data from '@/utils/data.json'
 
 import classes from './index.module.css'
+import Chart from '@/components/Chart/Chart'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -29,19 +30,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tokenize</title>
+        <title>KAD Token</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className="h-screen bg-gray-100">
+      <div>
         <Header />
 
-        <div className="h-[100px]" />
-
         <main className={classes.test}>
-          <BuyTokens />
-          <Balance balance={balance} />
-          <MintHistory mintHistory={mintHistory} />
+          <div>
+            <BuyTokens />
+            <Balance balance={balance} />
+            <MintHistory mintHistory={mintHistory} />
+          </div>
+          <div>
+            <Chart />
+          </div>
         </main>
       </div>
     </>

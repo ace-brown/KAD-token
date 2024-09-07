@@ -1,0 +1,13 @@
+.card {
+  padding: 1rem;
+  border-radius: var(--border-radius-sm-screen);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+  transition: box-shadow 0.3s ease;
+}
+
+@media screen and (min-width: 880px) {
+  .card {
+    border-radius: var(--border-radius-lg-screen);
+  }
+}
