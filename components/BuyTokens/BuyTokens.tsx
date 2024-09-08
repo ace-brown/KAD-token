@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 
 import Button from '../UI/Button'
@@ -10,21 +10,17 @@ import TokenModal from './TokenModal'
 
 const BuyTokens = () => {
   const [amount, setAmount] = useState('')
-  const [isTokenModalOpen, setIsTokenModalOpen] = useState(false)
-
-  const closeTokenModal = () => {
-    setIsTokenModalOpen(false)
-    // document.body.style.overflow = ''
-  }
+  const tokenModalRef = useRef<HTMLDialogElement>(null)
 
   const openTokenModal = () => {
-    setIsTokenModalOpen(true)
-    // document.body.style.overflow = 'hidden'
+    if (tokenModalRef.current) {
+      tokenModalRef.current.showModal()
+    }
   }
 
-  const openTokenModalKeyup = (event: React.KeyboardEvent) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      openTokenModal()
+  const closeTokenModal = () => {
+    if (tokenModalRef.current) {
+      tokenModalRef.current.close()
     }
   }
 
@@ -38,12 +34,7 @@ const BuyTokens = () => {
     <>
       <form className={classes['buy-tokens']} onSubmit={handleSubmit}>
         <Card className={classes['select-area']}>
-          <button
-            type="button"
-            className={classes['select-btn']}
-            onClick={openTokenModal}
-            onKeyUp={openTokenModalKeyup}
-          >
+          <button type="button" className={classes['select-btn']} onClick={openTokenModal}>
             <span>
               <Image src={kadImg} alt="kad token" width={24} height={24} />
             </span>
@@ -67,7 +58,7 @@ const BuyTokens = () => {
           Mint Tokens
         </Button>
       </form>
-      {isTokenModalOpen && <TokenModal onClose={closeTokenModal} />}
+      <TokenModal ref={tokenModalRef} closeTokenModal={closeTokenModal} />
     </>
   )
 }
