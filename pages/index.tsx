@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 
-import Balance from '@/components/layouts/Balance'
-import BuyTokens from '@/components/layouts/BuyTokens'
-import MintHistory from '@/components/layouts/MintHistory'
+import Balance from '@/components/Balance/Balance'
+import BuyTokens from '@/components/BuyTokens/BuyTokens'
+import MintHistory from '@/components/MintHistory/MintHistory'
 import Header from '@/components/layouts/Header'
 import data from '@/utils/data.json'
 import Chart from '@/components/Chart/Chart'
