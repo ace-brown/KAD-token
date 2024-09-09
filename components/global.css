@@ -5,16 +5,14 @@
   line-height: 24px;
   font-weight: 400;
 
-  /* --primary-color: #adff2f; */
-  --primary-color: azure;
-  /* --secondary-color: #94d235; */
-  /* --secondary-color: #ff6f61; */
-  /* --secondary-color: #d3d3d3; */
-  --secondary-color: #f5f5dc;
-  --primary-font-color: #626262;
+  --primary-color: #f0ffff; /* 60% */
+  --primary-color-2: #e1eeee; /* 60% */
+  --secondary-color: #ffdab9; /* 30% */
+  --accent-color: #ff7f50; /* 10% */
+  --primary-font-color: #1b263b;
+  --primary-font-color-2: #41506a;
   --secondary-font-color: #fff;
   --gery-color: #adadad;
-  --link-color: #006400;
   --cta-color: #ff4500;
   --cta-hover-color: #cc3700;
   background-color: var(--primary-color);

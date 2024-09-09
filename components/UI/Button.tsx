@@ -8,6 +8,7 @@ type ButtonProps = {
   type?: 'button' | 'submit' | 'reset'
   isLoading?: boolean
   isDisabled?: boolean
+  className?: string
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
@@ -18,13 +19,16 @@ const Button = (props: ButtonProps) => {
     type = 'button',
     isLoading = false,
     isDisabled = false,
+    className,
     onClick,
     ...rest
   } = props
 
   return (
     <button
-      className={`${classes.btn} ${classes[variant]} ${isLoading ? classes.loading : ''}`}
+      className={`${classes.btn} ${classes[variant]} ${isLoading ? classes.loading : ''} ${
+        className ? className : ''
+      }`}
       type={type}
       disabled={isDisabled || isLoading}
       onClick={onClick}

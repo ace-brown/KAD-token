@@ -1,15 +1,96 @@
-.modal-backdrop {
+.modal {
   max-width: 50ch;
+  min-width: 35ch;
   border: none;
   padding: 0;
   background: var(--primary-color);
   color: var(--primary-font-color);
-  padding: 2rem;
   border-radius: var(--border-radius-sm-screen);
   box-shadow: var(--box-shadow-3);
+  transition: all 400ms ease-in-out;
 }
 
-.modal-backdrop::backdrop {
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+}
+
+.title svg {
+  font-size: 2rem;
+  padding: 0.25rem;
+  background: var(--primary-color-2);
+  color: var(--primary-font-color-2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal::backdrop {
   backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 400ms ease-in-out;
+}
+
+.search {
+  margin: 1rem;
+}
+
+.search input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--primary-color-2);
+  color: var(--primary-font-color);
+  outline: none;
+  background: var(--primary-color);
+  border-radius: var(--border-radius-sm-screen);
+  transition: outline 300ms ease-in-out;
+}
+
+.search input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.token-list li {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.token-list li:hover,
+.token-list li:focus {
+  background-color: var(--primary-color-2);
+}
+
+.token-icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-text div {
+  margin-top: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.icon-text span {
+  font-size: 0.65rem;
+}
+
+.token-amount {
+  padding: 0 0.5rem;
 }
