@@ -19,7 +19,7 @@ const TokenModal = forwardRef((props: TokenModalProps, ref: Ref<HTMLDialogElemen
       <div className={classes.container}>
         <div className={classes.title}>
           <h1>Select a token</h1>
-          <IoMdClose />
+          <IoMdClose onClick={closeTokenModal} />
         </div>
         <div className={classes.search}>
           <input type="text" placeholder="Search token or address" autoFocus />

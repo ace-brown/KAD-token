@@ -5,17 +5,59 @@
   line-height: 24px;
   font-weight: 400;
 
-  --primary-color: #f0ffff; /* 60% */
-  --primary-color-2: #e1eeee; /* 60% */
-  --secondary-color: #ffdab9; /* 30% */
-  --accent-color: #ff7f50; /* 10% */
-  --primary-font-color: #1b263b;
-  --primary-font-color-2: #41506a;
-  --secondary-font-color: #fff;
-  --gery-color: #adadad;
-  --cta-color: #ff4500;
-  --cta-hover-color: #cc3700;
-  background-color: var(--primary-color);
+  --brand-color: hsl(47, 50%, 68%);
+
+  --neutral-color-100: hsl(0, 0%, 97%);
+  --neutral-color-200: hsl(48, 6%, 84%);
+  --neutral-color-300: hsl(48, 6%, 66%);
+  --neutral-color-400: hsl(46, 5%, 48%);
+  --neutral-color-500: hsl(48, 8%, 35%);
+  --neutral-color-600: hsl(47, 9%, 31%);
+  --neutral-color-700: hsl(45, 10%, 23%);
+  --neutral-color-800: hsl(48, 12%, 17%);
+  --neutral-color-900: hsl(49, 24%, 9%);
+
+  --success-color-100: #f2fff3;
+  --success-color-200: #daf7db;
+  --success-color-300: #bdf0bf;
+  --success-color-400: #9ae59e;
+  --success-color-500: #6fd675;
+  --success-color-600: #44bd4a;
+  --success-color-700: #26962b;
+  --success-color-800: #117016;
+  --success-color-900: #034706;
+
+  --warning-color-100: #fffbf2;
+  --warning-color-200: #f7eeda;
+  --warning-color-300: #f0e0bd;
+  --warning-color-400: #e5ce9a;
+  --warning-color-500: #d6b66f;
+  --warning-color-600: #bd9644;
+  --warning-color-700: #967326;
+  --warning-color-800: #705211;
+  --warning-color-900: #473203;
+
+  --danger-color-100: #fff3f2;
+  --danger-color-200: #f7dcda;
+  --danger-color-300: #f0c1bd;
+  --danger-color-400: #e59f9a;
+  --danger-color-500: #d6766f;
+  --danger-color-600: #bd4c44;
+  --danger-color-700: #962d26;
+  --danger-color-800: #701711;
+  --danger-color-900: #470703;
+
+  --neutral-msg-color-100: #f2f6ff;
+  --neutral-msg-color-200: #dae2f7;
+  --neutral-msg-color-300: #bdccf0;
+  --neutral-msg-color-400: #9aafe5;
+  --neutral-msg-color-500: #6f8dd6;
+  --neutral-msg-color-600: #4466bd;
+  --neutral-msg-color-700: #264696;
+  --neutral-msg-color-800: #112c70;
+  --neutral-msg-color-900: #031647;
+
+  background-color: var(--neutral-color-100);
 
   --page-width-mobile: 95%;
   --page-width-desktop: 90%;
