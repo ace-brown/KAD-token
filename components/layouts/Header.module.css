@@ -54,4 +54,9 @@
   .connect-btn button:last-child {
     margin-left: 3rem;
   }
+
+  .connect-btn svg {
+    color: var(--brand-color-900);
+    font-size: 1.5rem;
+  }
 }

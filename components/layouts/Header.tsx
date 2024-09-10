@@ -5,6 +5,7 @@ import Card from '../UI/Card'
 import logo from '@/assets/logo-no-background.svg'
 import classes from './Header.module.css'
 import ThemeToggle from './ThemeToggle'
+import LanguageSelector from './LanguageSelector'
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           <Image src={logo} alt="KAD Token" width={60} height={60} />
         </div>
         <div className={classes['connect-btn']}>
-          <h3>EN</h3>
+          <LanguageSelector />
           <ThemeToggle />
           <Button>Connect Wallet</Button>
         </div>

@@ -9,6 +9,7 @@ import data from '@/utils/data.json'
 import Card from '@/components/UI/Card'
 import classes from './index.module.css'
 import Warning from '@/components/Warning'
+import '@/utils/i18n'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
