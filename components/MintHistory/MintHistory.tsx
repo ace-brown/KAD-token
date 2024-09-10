@@ -3,6 +3,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 
 import { MintHistoryItem } from '@/utils/types.dt'
 import classes from './MintHistory.module.css'
+import Card from '../UI/Card'
 
 const formatReceiver = (receiver: string) => {
   return `${receiver.substring(0, 4)}...${receiver.substring(receiver.length - 4)}`
@@ -10,35 +11,24 @@ const formatReceiver = (receiver: string) => {
 
 const MintHistory = ({ mintHistory }: { mintHistory: MintHistoryItem[] }) => {
   return (
-    <div className={classes['mint-history']}>
+    <Card className={classes['mint-history']}>
       <h1>Recently Purchased</h1>
-      <ul className="mt-2 text-gray-500">
+      <ul className={classes['mint-list']}>
         {mintHistory.map((minter, i) => (
-          <li key={i} className="mb-2 flex justify-between items-center">
-            <div className="text-sm">
-              <Link
-                href={minter.addressLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold hover:text-orange-500"
-              >
+          <li key={i}>
+            <div>
+              <Link href={minter.addressLink} target="_blank" rel="noopener noreferrer">
                 {formatReceiver(minter.receiver.toString())}
               </Link>{' '}
               - <span>{minter.amount} DMA</span>
             </div>
-
-            <Link
-              href={minter.transactionLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" hover:text-orange-500"
-            >
+            <Link href={minter.transactionLink} target="_blank" rel="noopener noreferrer">
               <FaExternalLinkAlt size={12} />
             </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </Card>
   )
 }
 

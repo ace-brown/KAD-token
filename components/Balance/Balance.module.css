@@ -1,3 +1,14 @@
 .balance {
-  background-color: antiquewhite;
+  margin-top: 2rem;
+}
+
+.icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.identicon {
+  /* width: 2rem; */
 }

@@ -1,5 +1,4 @@
 .buy-tokens {
-  padding: 1rem;
   background: var(--neutral-color-150);
 }
 
@@ -49,4 +48,8 @@
 .select-input::placeholder {
   color: var(--gery-color);
   opacity: 1;
+}
+
+.submit-btn {
+  width: 100%;
 }

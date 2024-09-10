@@ -57,6 +57,7 @@ const BuyTokens = () => {
           />
         </Card>
         <Button
+          className={classes['submit-btn']}
           type="submit"
           // disabled={!amount || amount === '0'}
         >
