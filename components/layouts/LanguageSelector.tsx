@@ -1,9 +1,20 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import classes from './LanguageSelector.module.css'
+
 const languages = [
   { code: 'en', lang: 'English' },
-  { code: 'fr', lang: 'French' },
+  { code: 'de', lang: 'Deutsch' },
+  { code: 'fr', lang: 'Français' },
+  { code: 'es', lang: 'Español' },
+  { code: 'ru', lang: 'Русский' },
+  { code: 'pt', lang: 'Português' },
+  { code: 'it', lang: 'Italiano' },
+  { code: 'nl', lang: 'Nederlands' },
+  { code: 'ro', lang: 'Română' },
+  { code: 'zh', lang: '中文' },
+  { code: 'ja', lang: '日本語' },
 ]
 
 const LanguageSelector = () => {
@@ -18,7 +29,7 @@ const LanguageSelector = () => {
   }
 
   return (
-    <div className="btn-container">
+    <div className={classes['btn-container']}>
       {languages.map((lng) => {
         return (
           <button
@@ -32,6 +43,17 @@ const LanguageSelector = () => {
       })}
     </div>
   )
+
+  //   return (
+  //     <div>
+  //          {languages.map((lng) => {
+  //       <select name="language" id="language">
+  //         <option value="en"> {lng.lang}</option>
+  //         <option value="de"> {lng.lang}</option>
+  //       </select>
+  //           })}
+  //     </div>
+  //   )
 }
 
 export default LanguageSelector

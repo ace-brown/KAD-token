@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Button from '../UI/Button'
 import kadImg from '@/assets/Solana_logo.png'
 import classes from './TokenModal.module.css'
+import { useTranslation } from 'react-i18next'
 
 type TokenModalProps = {
   closeTokenModal: () => void
@@ -13,17 +14,18 @@ type TokenModalProps = {
 
 const TokenModal = forwardRef((props: TokenModalProps, ref: Ref<HTMLDialogElement>) => {
   const { closeTokenModal } = props
+  const { t } = useTranslation()
 
   return (
     <dialog className={classes.modal} ref={ref}>
       <div className={classes.container}>
         <div className={classes['token-header']}>
           <div className={classes.title}>
-            <h1>Select a token</h1>
+            <h1>{t('select')}</h1>
             <IoMdClose onClick={closeTokenModal} />
           </div>
           <div className={classes.search}>
-            <input type="text" placeholder="Search token or address" autoFocus />
+            <input type="text" placeholder={t('search')} autoFocus />
           </div>
         </div>
         <div className={classes['token-list']}>

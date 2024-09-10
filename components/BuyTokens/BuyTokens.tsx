@@ -7,10 +7,12 @@ import classes from './BuyTokens.module.css'
 import { FaChevronDown } from 'react-icons/fa'
 import Card from '../UI/Card'
 import TokenModal from './TokenModal'
+import { useTranslation } from 'react-i18next'
 
 const BuyTokens = () => {
   const [amount, setAmount] = useState('')
   const tokenModalRef = useRef<HTMLDialogElement>(null)
+  const { t } = useTranslation()
 
   const openTokenModal = () => {
     if (tokenModalRef.current) {
@@ -31,7 +33,6 @@ const BuyTokens = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-
     console.log(amount)
   }
 
@@ -61,7 +62,7 @@ const BuyTokens = () => {
           type="submit"
           // disabled={!amount || amount === '0'}
         >
-          Mint Tokens
+          {t('mint')}
         </Button>
       </form>
       <TokenModal ref={tokenModalRef} closeTokenModal={closeTokenModal} />

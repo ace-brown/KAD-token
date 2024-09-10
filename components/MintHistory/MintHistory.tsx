@@ -4,15 +4,18 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 import { MintHistoryItem } from '@/utils/types.dt'
 import classes from './MintHistory.module.css'
 import Card from '../UI/Card'
+import { useTranslation } from 'react-i18next'
 
 const formatReceiver = (receiver: string) => {
   return `${receiver.substring(0, 6)}...${receiver.substring(receiver.length - 6)}`
 }
 
 const MintHistory = ({ mintHistory }: { mintHistory: MintHistoryItem[] }) => {
+  const { t } = useTranslation()
+
   return (
     <Card className={classes['mint-history']}>
-      <h1>Recently Purchased</h1>
+      <h1>{t('purchased')}</h1>
       <ul className={classes['mint-list']}>
         {mintHistory.map((minter, i) => (
           <li key={i}>
