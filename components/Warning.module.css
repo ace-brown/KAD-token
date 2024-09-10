@@ -1,0 +1,9 @@
+.warning h1 {
+  color: var(--danger-color-600);
+  font-size: 2.75rem;
+}
+
+.warning h2 {
+  font-size: 2rem;
+  margin: 0.75rem auto 0.5rem auto;
+}

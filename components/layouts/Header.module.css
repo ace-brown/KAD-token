@@ -1,6 +1,7 @@
 .container {
   width: var(--page-width-mobile);
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 0 auto;
+  padding: 0.5rem 1rem;
 }
 
 .navigation {

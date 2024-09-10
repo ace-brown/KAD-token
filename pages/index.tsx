@@ -6,9 +6,9 @@ import BuyTokens from '@/components/BuyTokens/BuyTokens'
 import MintHistory from '@/components/MintHistory/MintHistory'
 import Header from '@/components/layouts/Header'
 import data from '@/utils/data.json'
-import Chart from '@/components/Chart/Chart'
 import Card from '@/components/UI/Card'
 import classes from './index.module.css'
+import Warning from '@/components/Warning'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -45,8 +45,8 @@ export default function Home() {
             <Balance balance={balance} />
             <MintHistory mintHistory={mintHistory} />
           </Card>
-          <div className={classes['chart-area']}>
-            <Chart />
+          <div className={classes['warning-area']}>
+            <Warning />
           </div>
         </main>
       </div>
