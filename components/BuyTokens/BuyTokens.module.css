@@ -1,6 +1,6 @@
 .buy-tokens {
   padding: 1rem;
-  background: var(--primary-color);
+  background: var(--neutral-color-150);
 }
 
 .select-area {
@@ -12,7 +12,7 @@
 }
 
 .select-btn {
-  color: var(--gery-color);
+  color: var(--neutral-color-200);
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -20,7 +20,7 @@
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: rgb(110, 110, 110);
+  background-color: var(--neutral-color-600);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -35,7 +35,6 @@
   padding: 1rem 0;
   border: none;
   background: var(--secondary-color);
-  color: var(--primary-font-color);
   text-align: right;
   outline: none;
   -moz-appearance: textfield;

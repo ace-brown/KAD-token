@@ -1,10 +1,13 @@
 .modal {
+  --padding: 2rem;
   max-width: 50ch;
-  min-width: 35ch;
+  min-width: 50ch;
+  /* setting max-height will cause a scrollbar */
+  height: 45ch;
   border: none;
   padding: 0;
-  background: var(--primary-color);
-  color: var(--primary-font-color);
+  background: var(--neutral-color-100);
+  color: var(--neutral-color-900);
   border-radius: var(--border-radius-sm-screen);
   box-shadow: var(--box-shadow-3);
   transition: all 400ms ease-in-out;
@@ -13,13 +16,22 @@
 .container {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.token-header {
+  background: var(--neutral-color-100);
+  position: sticky;
+  top: 0;
 }
 
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: var(--padding) var(--padding) 0.5rem var(--padding);
+  position: sticky;
+  top: 0;
 }
 
 .title h1 {
@@ -29,10 +41,16 @@
 .title svg {
   font-size: 2rem;
   padding: 0.25rem;
-  background: var(--primary-color-2);
-  color: var(--primary-font-color-2);
+  background: var(--neutral-color-200);
+  color: var(--brand-color-800);
   border-radius: 50%;
   cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+.title svg:hover,
+.title svg:focus {
+  color: var(--danger-color-500);
 }
 
 .modal::backdrop {
@@ -42,22 +60,46 @@
 }
 
 .search {
-  margin: 1rem;
+  margin: 1rem var(--padding) 0.5rem var(--padding);
+  background: var(--neutral-color-100);
+  position: sticky;
+  top: 4.5rem;
 }
 
 .search input {
   width: 100%;
   padding: 1rem;
-  border: 1px solid var(--primary-color-2);
-  color: var(--primary-font-color);
+  border: 1px solid var(--neutral-color-200);
+  color: var(--neutral-color-800);
   outline: none;
-  background: var(--primary-color);
   border-radius: var(--border-radius-sm-screen);
   transition: outline 300ms ease-in-out;
 }
 
 .search input:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--neutral-msg-color-400);
+}
+
+.token-list {
+  flex: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  /* setting max-height will cause a scrollbar */
+  max-height: 20rem;
+}
+
+.token-list::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.token-list::-webkit-scrollbar-track {
+  background-color: var(--neutral-color-100);
+}
+
+.token-list::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-color-300);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .token-list li {
@@ -65,12 +107,14 @@
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.75rem var(--padding);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .token-list li:hover,
 .token-list li:focus {
-  background-color: var(--primary-color-2);
+  background-color: var(--neutral-color-200);
 }
 
 .token-icon {
@@ -80,17 +124,16 @@
   justify-content: center;
 }
 
-.icon-text div {
-  margin-top: 3px;
+.icon-text h3 {
   font-size: 1rem;
   font-weight: 600;
-  line-height: 10px;
+  line-height: 1rem;
 }
 
-.icon-text span {
+.icon-text p {
   font-size: 0.65rem;
 }
 
 .token-amount {
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
 }

@@ -1,8 +1,9 @@
 .card {
   padding: 1rem;
   border-radius: var(--border-radius-sm-screen);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: var(--neutral-color-200);
+  box-shadow: var(--box-shadow-3);
+  background-color: var(--neutral-color-150);
+  border: 1px solid var(--neutral-color-200);
   transition: box-shadow 0.3s ease;
 }
 

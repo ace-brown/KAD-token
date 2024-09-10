@@ -8,41 +8,41 @@
 }
 
 .primary {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--brand-color-500);
+  color: var(--neutral-color-100);
 }
 
 .primary:hover {
-  background-color: #0056b3;
+  background-color: var(--brand-color-700);
 }
 
 .secondary {
-  background-color: #6c757d;
-  color: white;
+  background-color: var(--neutral-color-400);
+  color: var(--neutral-color-100);
 }
 
 .secondary:hover {
-  background-color: #545b62;
+  background-color: var(--neutral-color-500);
 }
 
 .danger {
-  background-color: #dc3545;
-  color: white;
+  background-color: var(--danger-color-600);
+  color: var(--neutral-color-100);
 }
 
 .danger:hover {
-  background-color: #c82333;
+  background-color: var(--danger-color-700);
 }
 
 .link {
   background: none;
-  color: #007bff;
+  color: var(--neutral-msg-color-600);
   text-decoration: underline;
   border: none;
 }
 
 .link:hover {
-  color: #0056b3;
+  color: var(--neutral-msg-color-700);
 }
 
 .loading {

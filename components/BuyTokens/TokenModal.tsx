@@ -17,23 +17,25 @@ const TokenModal = forwardRef((props: TokenModalProps, ref: Ref<HTMLDialogElemen
   return (
     <dialog className={classes.modal} ref={ref}>
       <div className={classes.container}>
-        <div className={classes.title}>
-          <h1>Select a token</h1>
-          <IoMdClose onClick={closeTokenModal} />
-        </div>
-        <div className={classes.search}>
-          <input type="text" placeholder="Search token or address" autoFocus />
+        <div className={classes['token-header']}>
+          <div className={classes.title}>
+            <h1>Select a token</h1>
+            <IoMdClose onClick={closeTokenModal} />
+          </div>
+          <div className={classes.search}>
+            <input type="text" placeholder="Search token or address" autoFocus />
+          </div>
         </div>
         <div className={classes['token-list']}>
           <ul>
             <li>
               <div className={classes['token-icon']}>
                 <span>
-                  <Image src={kadImg} alt="kad token" width={24} height={24} />
+                  <Image src={kadImg} alt="kad token" width={28} height={28} />
                 </span>
                 <div className={classes['icon-text']}>
-                  <div>KAD</div>
-                  <span>KAD Token</span>
+                  <h3>KAD</h3>
+                  <p>KAD Token</p>
                 </div>
               </div>
               <div className={classes['token-amount']}>
@@ -43,11 +45,25 @@ const TokenModal = forwardRef((props: TokenModalProps, ref: Ref<HTMLDialogElemen
             <li>
               <div className={classes['token-icon']}>
                 <span>
-                  <Image src={kadImg} alt="kad token" width={24} height={24} />
+                  <Image src={kadImg} alt="kad token" width={28} height={28} />
                 </span>
                 <div className={classes['icon-text']}>
-                  <div>SOL</div>
-                  <span>Solana</span>
+                  <h3>SOL</h3>
+                  <p>Solana</p>
+                </div>
+              </div>
+              <div className={classes['token-amount']}>
+                <p>0</p>
+              </div>
+            </li>
+            <li>
+              <div className={classes['token-icon']}>
+                <span>
+                  <Image src={kadImg} alt="kad token" width={28} height={28} />
+                </span>
+                <div className={classes['icon-text']}>
+                  <h3>BTC</h3>
+                  <p>Bitcoin</p>
                 </div>
               </div>
               <div className={classes['token-amount']}>

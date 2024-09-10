@@ -5,57 +5,66 @@
   line-height: 24px;
   font-weight: 400;
 
-  --brand-color: hsl(47, 50%, 68%);
+  --brand-color-100: hsl(47, 10%, 100%);
+  --brand-color-200: hsl(47, 30%, 90%);
+  --brand-color-300: hsl(47, 30%, 80%);
+  --brand-color-400: hsl(47, 40%, 75%);
+  --brand-color-500: hsl(47, 50%, 55%);
+  --brand-color-600: hsl(47, 55%, 45%);
+  --brand-color-700: hsl(47, 60%, 35%);
+  --brand-color-800: hsl(47, 70%, 25%);
+  --brand-color-900: hsl(47, 80%, 15%);
 
-  --neutral-color-100: hsl(0, 0%, 97%);
-  --neutral-color-200: hsl(48, 6%, 84%);
-  --neutral-color-300: hsl(48, 6%, 66%);
-  --neutral-color-400: hsl(46, 5%, 48%);
-  --neutral-color-500: hsl(48, 8%, 35%);
-  --neutral-color-600: hsl(47, 9%, 31%);
-  --neutral-color-700: hsl(45, 10%, 23%);
-  --neutral-color-800: hsl(48, 12%, 17%);
-  --neutral-color-900: hsl(49, 24%, 9%);
+  --neutral-color-100: hsl(0, 0%, 100%);
+  --neutral-color-150: hsl(0, 0%, 98%);
+  --neutral-color-200: hsl(0, 0%, 90%);
+  --neutral-color-300: hsl(0, 0%, 69%);
+  --neutral-color-400: hsl(0, 0%, 66%);
+  --neutral-color-500: hsl(0, 0%, 59%);
+  --neutral-color-600: hsl(0, 0%, 36%);
+  --neutral-color-700: hsl(0, 0%, 25%);
+  --neutral-color-800: hsl(0, 0%, 16%);
+  --neutral-color-900: hsl(0, 0%, 8%);
 
-  --success-color-100: #f2fff3;
-  --success-color-200: #daf7db;
-  --success-color-300: #bdf0bf;
-  --success-color-400: #9ae59e;
-  --success-color-500: #6fd675;
-  --success-color-600: #44bd4a;
-  --success-color-700: #26962b;
-  --success-color-800: #117016;
-  --success-color-900: #034706;
+  --success-color-100: hsl(123, 100%, 97%);
+  --success-color-200: hsl(123, 64%, 91%);
+  --success-color-300: hsl(123, 63%, 84%);
+  --success-color-400: hsl(123, 59%, 75%);
+  --success-color-500: hsl(123, 56%, 64%);
+  --success-color-600: hsl(123, 48%, 50%);
+  --success-color-700: hsl(123, 60%, 37%);
+  --success-color-800: hsl(123, 74%, 25%);
+  --success-color-900: hsl(123, 92%, 15%);
 
-  --warning-color-100: #fffbf2;
-  --warning-color-200: #f7eeda;
-  --warning-color-300: #f0e0bd;
-  --warning-color-400: #e5ce9a;
-  --warning-color-500: #d6b66f;
-  --warning-color-600: #bd9644;
-  --warning-color-700: #967326;
-  --warning-color-800: #705211;
-  --warning-color-900: #473203;
+  --warning-color-100: hsl(41, 100%, 97%);
+  --warning-color-200: hsl(41, 64%, 91%);
+  --warning-color-300: hsl(41, 63%, 84%);
+  --warning-color-400: hsl(41, 59%, 75%);
+  --warning-color-500: hwb(41 44% 16%);
+  --warning-color-600: hsl(41, 48%, 50%);
+  --warning-color-700: hsl(41, 60%, 37%);
+  --warning-color-800: hsl(41, 74%, 25%);
+  --warning-color-900: hsl(41, 92%, 15%);
 
-  --danger-color-100: #fff3f2;
-  --danger-color-200: #f7dcda;
-  --danger-color-300: #f0c1bd;
-  --danger-color-400: #e59f9a;
-  --danger-color-500: #d6766f;
-  --danger-color-600: #bd4c44;
-  --danger-color-700: #962d26;
-  --danger-color-800: #701711;
-  --danger-color-900: #470703;
+  --danger-color-100: hsl(4, 100%, 97%);
+  --danger-color-200: hsl(4, 64%, 91%);
+  --danger-color-300: hsl(4, 63%, 84%);
+  --danger-color-400: hsl(4, 59%, 75%);
+  --danger-color-500: hsl(4, 56%, 64%);
+  --danger-color-600: hsl(4, 48%, 50%);
+  --danger-color-700: hsl(4, 60%, 37%);
+  --danger-color-800: hsl(4, 74%, 25%);
+  --danger-color-900: hsl(4, 92%, 15%);
 
-  --neutral-msg-color-100: #f2f6ff;
-  --neutral-msg-color-200: #dae2f7;
-  --neutral-msg-color-300: #bdccf0;
-  --neutral-msg-color-400: #9aafe5;
-  --neutral-msg-color-500: #6f8dd6;
-  --neutral-msg-color-600: #4466bd;
-  --neutral-msg-color-700: #264696;
-  --neutral-msg-color-800: #112c70;
-  --neutral-msg-color-900: #031647;
+  --neutral-msg-color-100: hsl(222, 100%, 97%);
+  --neutral-msg-color-200: hsl(223, 64%, 91%);
+  --neutral-msg-color-300: hsl(222, 63%, 84%);
+  --neutral-msg-color-400: hsl(223, 59%, 75%);
+  --neutral-msg-color-500: hsl(223, 56%, 64%);
+  --neutral-msg-color-600: hsl(223, 48%, 50%);
+  --neutral-msg-color-700: hsl(223, 60%, 37%);
+  --neutral-msg-color-800: hsl(223, 74%, 25%);
+  --neutral-msg-color-900: hsl(223, 92%, 15%);
 
   background-color: var(--neutral-color-100);
 
@@ -92,15 +101,15 @@ html {
   font-weight: 300;
   font-style: normal;
   height: 100%;
-  color: var(--primary-font-color);
+  color: var(--brand-color-900);
   scroll-behavior: smooth;
 }
 
 body {
+  color: var(--brand-color-900);
   position: relative;
   height: 100%;
   margin: 0;
-  background: var(--primary-color);
   font-size: 1rem;
   line-height: 1.2;
 }
@@ -113,7 +122,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--brand-color-500);
   transition: all 200ms linear;
   margin: 0;
   min-width: fit-content;
@@ -121,7 +130,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--cta-hover-color);
+  color: var(--brand-color-600);
 }
 
 li {
@@ -136,13 +145,7 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--primary-font-color);
+  color: var(--brand-color-800);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -154,7 +157,7 @@ h2 {
 
 p {
   font-size: 1rem;
-  color: var(--primary-font-color);
+  color: var(--brand-color-900);
 }
 
 button {
@@ -167,4 +170,19 @@ picture {
   height: auto;
   display: block;
   user-select: none;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--neutral-color-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-color-300);
+  border-radius: 4px;
+  cursor: pointer;
 }
