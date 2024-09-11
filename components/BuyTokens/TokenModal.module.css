@@ -1,7 +1,7 @@
 .modal {
   --padding: 2rem;
   max-width: 50ch;
-  min-width: 50ch;
+  min-width: 35ch;
   /* setting max-height will cause a scrollbar */
   height: 45ch;
   border: none;
@@ -134,8 +134,4 @@
 
 .icon-text p {
   font-size: 0.65rem;
-}
-
-.token-amount {
-  /* padding: 0 0.5rem; */
 }

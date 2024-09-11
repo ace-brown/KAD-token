@@ -54,6 +54,7 @@ const BuyTokens = () => {
             min="0"
             placeholder="0"
             required
+            autoFocus
             onChange={(e) => setAmount(e.target.value)}
           />
         </Card>

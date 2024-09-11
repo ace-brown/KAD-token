@@ -33,6 +33,7 @@
 
 .select-btn p {
   color: var(--brand-color-800);
+  font-size: clamp(0.5rem, 3vw, 1rem);
 }
 
 .select-input {
