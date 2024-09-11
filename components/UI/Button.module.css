@@ -10,11 +10,7 @@
 
 .primary {
   background-color: var(--brand-color-500);
-  color: var(--neutral-color-100);
-}
-
-.primary:hover {
-  background-color: var(--brand-color-700);
+  color: #eaeaea;
 }
 
 [data-theme='dark'] .primary:hover {

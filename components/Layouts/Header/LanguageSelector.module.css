@@ -1,5 +1,4 @@
 .select-container {
-  font-size: 1rem;
   position: relative;
   cursor: pointer;
   border-radius: 0.5rem;
@@ -8,10 +7,11 @@
 }
 
 .select-container select {
+  font-size: 1rem;
   padding: 0.85rem 0.25rem;
   border-radius: 0.5rem;
   background: var(--brand-color-500);
-  color: var(--neutral-color-100);
+  color: #eaeaea;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   border: none;

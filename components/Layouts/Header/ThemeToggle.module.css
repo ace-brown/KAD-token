@@ -6,7 +6,7 @@
 .theme-toggle__icon {
   display: flex;
   align-items: center;
-  color: var(--font-clr-secondary);
+  color: var(--neutral-color-500);
   font-size: 1.4rem;
   cursor: pointer;
 }

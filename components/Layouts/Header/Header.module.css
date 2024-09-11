@@ -4,7 +4,7 @@
   padding: 0.5rem 1rem;
 }
 
-.navigation {
+.header {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -12,9 +12,6 @@
 
 .logo {
   width: 150px;
-}
-
-.logo {
   border-radius: 0.5rem;
 }
 
@@ -38,7 +35,7 @@
   margin-left: 0.5rem;
 }
 
-.connect-btn {
+.nav {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -51,12 +48,7 @@
     margin: 2rem auto;
   }
 
-  .connect-btn button:last-child {
-    margin-left: 3rem;
-  }
-
-  .connect-btn svg {
-    color: var(--brand-color-900);
+  .nav svg {
     font-size: 1.5rem;
   }
 }

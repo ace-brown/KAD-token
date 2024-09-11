@@ -25,12 +25,6 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.select-btn:hover,
-.select-btn:focus {
-  background: var(--neutral-color-300);
-  border: 1px solid var(--neutral-color-400);
-}
-
 .select-btn p {
   color: var(--brand-color-800);
   font-size: clamp(0.5rem, 3vw, 1rem);

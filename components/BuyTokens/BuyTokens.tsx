@@ -51,7 +51,7 @@ const BuyTokens = () => {
             className={classes['select-input']}
             type="number"
             value={amount}
-            min="0"
+            min="1"
             placeholder="0"
             required
             autoFocus
