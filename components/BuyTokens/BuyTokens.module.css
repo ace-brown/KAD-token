@@ -12,20 +12,27 @@
 }
 
 .select-btn {
-  color: var(--neutral-color-200);
+  background: var(--neutral-color-200);
+  border: 1px solid var(--neutral-color-300);
+  color: var(--brand-color-800);
+  box-shadow: var(--box-shadow-3);
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  border: none;
-  background-color: var(--neutral-color-600);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.select-btn:hover,
+.select-btn:focus {
+  background: var(--neutral-color-300);
+  border: 1px solid var(--neutral-color-400);
+}
+
 .select-btn p {
-  color: var(--primary-color);
+  color: var(--brand-color-800);
 }
 
 .select-input {
@@ -34,7 +41,8 @@
   font-weight: 600;
   padding: 1rem 0;
   border: none;
-  background: var(--secondary-color);
+  background: var(--neutral-color-150);
+  color: var(--brand-color-800);
   text-align: right;
   outline: none;
   -moz-appearance: textfield;
@@ -47,7 +55,7 @@
 }
 
 .select-input::placeholder {
-  color: var(--gery-color);
+  color: var(--neutral-color-300);
   opacity: 1;
 }
 

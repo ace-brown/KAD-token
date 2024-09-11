@@ -17,6 +17,10 @@
   background-color: var(--brand-color-700);
 }
 
+[data-theme='dark'] .primary:hover {
+  background-color: var(--brand-color-400);
+}
+
 .secondary {
   background-color: var(--neutral-color-400);
   color: var(--neutral-color-100);

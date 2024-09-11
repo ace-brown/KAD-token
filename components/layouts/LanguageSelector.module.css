@@ -1,0 +1,24 @@
+.select-container {
+  font-size: 1rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: var(--brand-color-500);
+}
+
+.select-container select {
+  padding: 0.85rem 0.25rem;
+  border-radius: 0.5rem;
+  background: var(--brand-color-500);
+  color: var(--neutral-color-100);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.select-container select option {
+  width: 100%;
+  outline: none;
+}
