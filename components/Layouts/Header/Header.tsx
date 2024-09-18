@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 import logo from '@/assets/logo-no-background.svg'
 import LanguageSelector from './LanguageSelector'
-import Button from '../../UI/Button'
 import Card from '../../UI/Card'
 import ThemeToggle from './ThemeToggle'
 import classes from './Header.module.css'
@@ -37,7 +36,6 @@ const Header = () => {
           <LanguageSelector />
           <ThemeToggle />
           <WalletMultiButton style={connectBtnStyle} />
-          {/* <Button>{t('connect')}</Button> */}
         </nav>
       </div>
     </Card>
