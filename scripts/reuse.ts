@@ -1,8 +1,9 @@
 import fs from 'fs'
 import 'dotenv/config'
 import path from 'path'
-import { Keypair, PublicKey } from '@solana/web3.js'
+import { clusterApiUrl, Connection, Keypair, PublicKey } from '@solana/web3.js'
 
+export const devConnection = new Connection(clusterApiUrl('devnet'))
 export const TOKEN_OWNER = process.env.INJECTED_DEV_TOKEN_OWNER_KEYPAIR || ''
 export function checkOwner() {
   if (!TOKEN_OWNER) {

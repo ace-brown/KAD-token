@@ -2,15 +2,13 @@ import fs from 'fs'
 import { clusterApiUrl, Connection, Keypair } from '@solana/web3.js'
 import { createMint } from '@solana/spl-token'
 
-import { checkOwner, getTokenAddress, OWNER } from './reuse'
+import { checkOwner, devConnection, getTokenAddress, OWNER } from './reuse'
 
 checkOwner()
 
-const connection = new Connection(clusterApiUrl('devnet'))
-
 async function createToken(OWNER: Keypair): Promise<void> {
   // createMint creates and initializes a new mint
-  const tokenMint = await createMint(connection, OWNER, OWNER.publicKey, null, 2)
+  const tokenMint = await createMint(devConnection, OWNER, OWNER.publicKey, null, 2)
   console.log(`✅ Token mint created: ${tokenMint.toString()}`)
 
   // Write token mint to a file

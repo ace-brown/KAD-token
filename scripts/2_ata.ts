@@ -1,11 +1,9 @@
 import { clusterApiUrl, Connection, Keypair, PublicKey } from '@solana/web3.js'
 import { getOrCreateAssociatedTokenAccount } from '@solana/spl-token'
 
-import { checkOwner, getTokenAddress, OWNER } from './reuse'
+import { checkOwner, devConnection, getTokenAddress, OWNER } from './reuse'
 
 checkOwner()
-
-const connection = new Connection(clusterApiUrl('devnet'))
 
 async function getOrCreateATA(tokenMint: PublicKey, owner: Keypair): Promise<PublicKey> {
   const maxRetries = 30
@@ -19,7 +17,7 @@ async function getOrCreateATA(tokenMint: PublicKey, owner: Keypair): Promise<Pub
         } to get or create Associated Token Account (ATA) for token mint: ${tokenMint.toString()}`
       )
       const ownerTokenAccount = await getOrCreateAssociatedTokenAccount(
-        connection,
+        devConnection,
         OWNER,
         tokenMint,
         OWNER.publicKey
